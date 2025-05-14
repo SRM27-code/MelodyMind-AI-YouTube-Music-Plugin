@@ -121,7 +121,9 @@
 ## 📸 Screenshots
 
 ![Login UI](https://github.com/SRM27-code/MelodyMind-AI-YouTube-Music-Plugin/blob/main/Screenshots/Screenshot%202025-02-02%20220441.png?raw=true)
+
 ![Voice Assistant GIF](https://github.com/SRM27-code/MelodyMind-AI-YouTube-Music-Plugin/blob/main/Screenshots/Animation%20-%201747198930367.gif?raw=true)
+
 ![Music Control Interface](https://github.com/SRM27-code/MelodyMind-AI-YouTube-Music-Plugin/blob/main/Screenshots/Screenshot%202025-05-14%20102451.png?raw=true)
 
 ---
