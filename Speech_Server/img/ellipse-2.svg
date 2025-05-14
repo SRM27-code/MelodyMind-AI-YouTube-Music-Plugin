@@ -1,0 +1,29 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_bd_4_26)">
+<circle cx="200" cy="200" r="100" transform="rotate(90 200 200)" fill="#transperent"/>
+<circle cx="200" cy="200" r="99" transform="rotate(90 200 200)" stroke="url(#paint0_linear_4_26)" stroke-opacity="0.5" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="200" cy="200" r="99" transform="rotate(90 200 200)" stroke="url(#paint1_linear_4_26)" stroke-opacity="0.1" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_bd_4_26" x="0" y="0" width="400" height="400" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="17.5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4_26"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="50"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="effect1_backgroundBlur_4_26" result="effect2_dropShadow_4_26"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_4_26" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_4_26" x1="305.373" y1="86.8264" x2="65.0445" y2="120.367" gradientUnits="userSpaceOnUse">
+<stop stop-color="#transperent"/>
+<stop offset="1" stop-color="#848484"/>
+</linearGradient>
+<linearGradient id="paint1_linear_4_26" x1="305.373" y1="86.8264" x2="65.0445" y2="120.367" gradientUnits="userSpaceOnUse">
+<stop stop-color="#848484"/>
+<stop offset="1" stop-color="#transperent"/>
+</linearGradient>
+</defs>
+</svg>

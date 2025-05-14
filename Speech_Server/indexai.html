@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text & Music Player</title>
+    <script src="eel.js"></script>
+    <script src="scriptai.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #output {
+            font-size: x-large;
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 20px auto;
+            width: 50%;
+            min-height: 50px;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        button {
+            font-size: large;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Speech to Text & Music Player</h1>
+    <div id="output">Speech text will appear here...</div>
+    <div class="controls">
+        <button onclick="sendCommand('continue')">Play</button>
+        <button onclick="sendCommand('pause')">Pause</button>
+        <button onclick="sendCommand('stop')">Stop</button>
+    </div>
+</body>
+</html>

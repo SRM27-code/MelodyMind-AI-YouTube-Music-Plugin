@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melody Mind</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+  <div class="melody-mind">
+    <div class="div">
+      <div class="overlap">
+        <div class="ellipse"></div>
+<button class="listen-button" id="listenButton">
+          <div class="prototype">
+            <img src="img/ggg.gif" />
+            <div class="audio-wave">
+              <div class="bar"></div>
+              <div class="bar-2"></div>
+              <div class="bar-3"></div>
+              <div class="bar-4"></div>
+              <div class="bar-5"></div>
+            </div> 
+          </div>
+        </button>
+      </div>
+      <div class="container"style="display:none;">
+        <form action="/play" method="post">
+            <input type="text" name="song_name" placeholder="Enter " required>
+            <button type="submit">Play</button>
+        </form>
+    </div>
+      <div class="nav">
+        <button class="settings-svgrepo">
+        </button>
+        <button class="close-svgrepo"></button>
+        <div class="logo">
+          <div class="overlap-group">
+            <img class="vector" src="img/vector.svg" />
+            <div class="text-wrapper-2">elodymind</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-container-settings"style="display: none;">
+    <div class="flex-settings" id="flexDiv">
+      <button class="close-button-settings"></button>
+      <div class="vector-4-settings"></div>
+      <div class="settings-5-settings">
+        <div class="frame-1-settings">
+          <button class="frame-7-settings"onclick="openLanguages()">
+            <div class="group-8-settings">
+              <div class="frame-9-settings">
+                <div class="language-settings"><div class="vector-a-settings"></div></div>
+                <span class="language-b-settings">Language</span>
+              </div>
+              <div class="rectangle-c-settings"></div>
+            </div>
+          </button>
+          <button class="button-d-settings">
+            <div class="group-e-settings">
+              <div class="frame-f-settings">
+                <div class="broadcast-svgrepo-com-settings">
+                  <div class="vector-10-settings"></div>
+                </div>
+                <span class="voice-settings">Voice</span>
+              </div>
+              <div class="rectangle-11-settings"></div>
+            </div>
+          </button>
+          <button class="button-12-settings"id="themeButton">
+            <div class="frame-13-settings">
+              <div class="frame-14-settings">
+                <div class="amaze-svgrepo-com-settings">
+                  <div class="vector-15-settings"></div>
+                </div>
+                <span class="theme-settings">Theme</span>
+              </div>
+              <div class="rectangle-16-settings"></div>
+            </div>
+          </button>
+          <button class="frame-17-settings">
+            <div class="group-18-settings">
+              <div class="frame-19-settings">
+                <div class="about-filled-svgrepo-com-settings">
+                  <div class="page-settings">
+                    <div class="drop-settings"><div class="shape-settings"></div></div>
+                  </div>
+                </div>
+                <span class="about-us-settings">About Us</span>
+              </div>
+              <div class="rectangle-1a-settings"></div>
+            </div>
+          </button>
+          <button class="frame-1b-settings">
+            <div class="group-1c-settings">
+              <div class="frame-1d-settings">
+                <div class="call-svgrepo-com-settings"></div>
+                <span class="contact-us-settings">Contact Us</span>
+              </div>
+              <div class="rectangle-1e-settings"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-container-languages" style="display: none;">
+    <div class="flex-row-ff-languages">
+      <button class="close-button-languages" ></button>
+      <div class="lang-4-languages">
+        <div class="frame-languages">
+          <span class="languages-languages">Languages</span>
+          <button class="group-languages">
+            <span class="english-languages">English</span>
+            <div class="rectangle-languages"></div>
+            <div class="arrow-up-languages"><div class="vector-5-languages"></div></div>
+          </button>
+          <span class="more-languages-soon-languages">More languages soon...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-container-voice"style="display: none;">
+    <div class="flex-row-abf-voice">
+      <button class="close-svgrepo-com-3-voice"></button>
+      <div class="vector-4-voice"></div>
+      <div class="voice-5-voice">
+        <div class="frame-voice">
+          <span class="voice-6-voice">Voice</span>
+          <div class="frame-7-voice">
+            <button class="group-voice">
+              <span class="voice-1-voice">Voice 1</span>
+              <div class="rectangle-voice"></div>
+              <div class="male-person-voice">
+                <div class="group-8-voice"><div class="vector-9-voice"></div></div>
+              </div>
+            </button>
+            <button class="group-a-voice">
+              <span class="voice-b-voice">Voice 2</span>
+              <div class="rectangle-c-voice"></div>
+              <div class="male-person-svgrepo-com-voice">
+                <div class="vector-d-voice"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-container-theme"style="display: none;">
+    <div class="flex-row-ec-theme">
+      <button class="close-svgrepo-com-theme"></button>
+      <div class="vector-3-theme"></div>
+      <div class="theme-4-theme">
+        <div class="frame-theme">
+          <span class="theme-5-theme">Theme</span>
+          <div class="frame-6-theme">
+            <button class="group-theme">
+              <div class="frame-7-theme">
+                <div class="sun-svgrepo-theme"></div>
+                <span class="light-theme">Light</span>
+              </div>
+              <div class="rectangle-theme"></div>
+            </button>
+            <button class="group-8-theme">
+              <div class="frame-9-theme">
+                <div class="moon-svgrepo-theme"><div class="vector-a-theme"></div></div>
+                <span class="dark-theme">Dark</span>
+              </div>
+              <div class="rectangle-b-theme"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-container-about"style="display: none;">
+    <div class="flex-row-bc-3-about">
+      <button class="close-svgrepo-com-about"></button>
+      <div class="about-5-about">
+        <div class="frame-about">
+          <span class="about-us-about">About Us</span>
+          <span class="student-project-about">
+            <br>We are students from VIT Bhopal, and we have done this project to reduce user stress through music.</br>
+            <br>And you can give you feedbacks in the comment box you can mail us</br>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-container-log"style="display: none;">
+    <div class="flex-row-c-log">
+      <!-- Close Button -->
+      <button type="button" class="close-svgrepo-com-log" onclick="closeLogin()"></button>
+        
+      <div class="login-4-log">
+        <div class="frame-log">
+          <div class="frame-5-log">
+            <div class="frame-6-log">
+            <!-- Email Field -->
+            <div class="frame-7-log">
+                <span class="username-or-email-log">Email</span>
+                <div class="rectangle-log">
+                  <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+              </div>
+                
+              <!-- Password Field -->
+              <div class="frame-8-log">
+                <span class="password-log">Password</span>
+                <div class="rectangle-9-log">
+                  <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <br>
+                <!-- Login Button -->
+                <button type="submit" class="frame-a-log" onclick="login()">
+                  <div class="group-log">
+                    <div class="frame-b-log">
+                      <div class="log-out-log"></div>
+                      <span class="login-c-log">Login</span>
+                    </div>
+                    <div class="rectangle-d-log"></div>
+                  </div>
+                </button>
+              </div>
+            </div>  
+            <!-- Forgot Password -->
+            <div>
+              <button type="button" class="Sigin-log">
+                Sign in
+              </button>
+              <button type="button" class="forgot-password-log" onclick="forgotPassword()">
+                Forgot Password?
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-container-contatct"style="display:none;">
+    <div class="flex-row-contact">
+       <button class="close-svgrepo-3-contact"></button>
+        <div class="contact-5-contact">
+            <div class="frame-contact">
+                <div class="frame-6-contact">
+                    <span class="contact-us-contact">Contact Us</span>
+                    <div class="frame-7-contact">
+                        <span class="feedback-section-contact">
+                            If anyone has feedback or suggestions,<br />Please mention them below or Contact us:
+                        </span>
+                        <span class="email-contact">Email : capstone455@gmail.com</span>
+                    </div>
+                    <div class="frame-8-contact">
+                      <form name="submit-to-google-sheet">
+                      <div class="group-contact">
+                          <div class="rectangle-contact">
+                            <input type="text" name="Name" placeholder="Your Name" required >
+                          </div>
+                      </div>
+                      <div class="group-9-contact">
+                          <div class="rectangle-c-contact">
+                            <input type="email" name="e-mail" placeholder="Your Email" required>
+                          </div>
+                      </div>
+                      <div class="group-d-contact">
+                          <div class="rectangle-e-contact">
+                            <textarea name="Message" rows="6" placeholder="Comments"></textarea>
+                          </div>
+                      </div>
+                      <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="player-1"style="display:none;">
+    <div class="player">
+      <div class="details">
+        <div class="track-art"></div>
+        <div class="track-name">Track Name</div>
+        <br>
+        <div class="track-artist">Track Artist</div>
+      </div>
+      <div class="buttons">
+        <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+        <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+        <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+      </div>
+      <div class="slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+      </div>
+      <div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+      </div>
+    </div>
+  </div>
+  <div class="ai-1"style="display:none;">
+    <div class="ai">
+      <div id="output">Speech text will appear here...</div>
+       <div class="controls">
+        <button onclick="sendCommand('continue')">Play</button>
+        <button onclick="sendCommand('pause')">Pause</button>
+        <button onclick="sendCommand('stop')">Stop</button>
+    </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="login.js"></script>
+  <script src="eel.js"></script>
+  <script src="scriptai.js" defer></script>
+
+  <script>
+    // Select the buttons
+    const settingsButton = document.querySelector('.settings-svgrepo');
+    const closeButton = document.querySelector('.close-button-settings');
+    const listenButton = document.querySelector('.listen-button');
+    const loginButton = document.querySelector('.button-settings');
+    const mainLogContainerlog = document.querySelector('.main-container-log');
+    const mainContainerSetting = document.querySelector('.main-container-settings');
+    const logcloseButton = document.querySelector('.close-svgrepo-com-log');
+
+
+    loginButton.addEventListener('click', () => {
+      mainContainerSetting.style.display = 'none'; // Hide settings
+      mainLogContainerlog.style.display = 'block'; // Show log
+    });
+    // Close the log container and show the settings container
+    logcloseButton.addEventListener('click', () => {
+      mainLogContainerlog.style.display = 'none'; // Hide log
+      mainContainerSetting.style.display = 'block'; // Show settings
+    });
+
+
+    // Function to activate settings
+    function activateSettings() {
+        // Hide the listen button
+        listenButton.style.display = 'none'; // Hide the listen button
+    }
+
+    // Function to close settings
+    function closeSettings() {
+        // Show the listen button again
+        listenButton.style.display = 'inline-block'; // Show the listen button
+    }
+
+    // Add event listener to settings button
+    settingsButton.addEventListener('click', () => {
+        activateSettings();
+    });
+
+    // Add event listener to close button
+    closeButton.addEventListener('click', () => {
+        closeSettings();
+    });
+  </script>
+
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby34vahnpVJ4mWXf7HCkiE7YnNbtlxjc9CkSEMvXleXt7QGA4UeVlXZ0zU6g3qxK4Mg/exec'
+  const form1 = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form1.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form1)})
+      .then(response => {
+        console.log('Success!', response)
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 2000)
+        form1.reset(); // Call reset() as a function to clear the input fields
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+ </script>
+
+ <script>
+  let now_playing = document.querySelector(".now-playing");
+  let track_art = document.querySelector(".track-art");
+  let track_name = document.querySelector(".track-name");
+  let track_artist = document.querySelector(".track-artist");
+
+  let playpause_btn = document.querySelector(".playpause-track");
+  let next_btn = document.querySelector(".next-track");
+  let prev_btn = document.querySelector(".prev-track");
+
+  let seek_slider = document.querySelector(".seek_slider");
+  let volume_slider = document.querySelector(".volume_slider");
+  let curr_time = document.querySelector(".current-time");
+  let total_duration = document.querySelector(".total-duration");
+
+  let track_index = 0;
+  let isPlaying = false;
+  let updateTimer;
+
+  // Create new audio element
+  let curr_track = document.createElement('audio');
+
+  // Define the tracks that have to be played
+  let track_list = [
+    {
+      name: "Night Owl",
+      artist: "Broke For Free",
+      image: "https://images.pexels.com/photos/2264753/pexels-photo-2264753.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
+      path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"
+    },
+    {
+      name: "Enthusiast",
+      artist: "Tours",
+      image: "https://images.pexels.com/photos/3100835/pexels-photo-3100835.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
+      path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3"
+    },
+    {
+      name: "Shipping Lanes",
+      artist: "Chad Crouch",
+      image: "https://images.pexels.com/photos/1717969/pexels-photo-1717969.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
+      path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Chad_Crouch/Arps/Chad_Crouch_-_Shipping_Lanes.mp3",
+    },
+  ];
+
+  function random_bg_color() {
+
+  // Get a number between 64 to 256 (for getting lighter colors)
+  let red = Math.floor(Math.random() * 256) + 64;
+  let green = Math.floor(Math.random() * 256) + 64;
+  let blue = Math.floor(Math.random() * 256) + 64;
+
+  // Construct a color withe the given values
+  let bgColor = "rgb(" + red + "," + green + "," + blue + ")";
+  // Set the background to that color
+  document.body.style.background = bgColor;
+  }
+
+  function loadTrack(track_index) {
+    clearInterval(updateTimer);
+    resetValues();
+    curr_track.src = track_list[track_index].path;
+    curr_track.load();
+
+    track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
+    track_name.textContent = track_list[track_index].name;
+    track_artist.textContent = track_list[track_index].artist;
+    now_playing.textContent = "PLAYING " + (track_index + 1) + " OF " + track_list.length;
+
+    updateTimer = setInterval(seekUpdate, 1000);
+    curr_track.addEventListener("ended", nextTrack);
+    random_bg_color();
+  }
+
+  function resetValues() {
+    curr_time.textContent = "00:00";
+    total_duration.textContent = "00:00";
+    seek_slider.value = 0;
+  }
+
+  // Load the first track in the tracklist
+  loadTrack(track_index);
+
+  function playpauseTrack() {
+    if (!isPlaying) playTrack();
+    else pauseTrack();
+  }
+
+  function playTrack() {
+    curr_track.play();
+    isPlaying = true;
+    playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+    listenButton.style.display = 'none';
+  }
+
+  function pauseTrack() {
+    curr_track.pause();
+    isPlaying = false;
+    playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';;
+    listenButton.style.display = 'block';
+  }
+
+  function nextTrack() {
+    if (track_index < track_list.length - 1)
+      track_index += 1;
+    else track_index = 0;
+    loadTrack(track_index);
+    playTrack();
+  }
+
+  function prevTrack() {
+    if (track_index > 0)
+      track_index -= 1;
+    else track_index = track_list.length;
+    loadTrack(track_index);
+    playTrack();
+  }
+
+  function seekTo() {
+    let seekto = curr_track.duration * (seek_slider.value / 100);
+    curr_track.currentTime = seekto;
+  }
+
+  function setVolume() {
+    curr_track.volume = volume_slider.value / 100;
+  }
+
+  function seekUpdate() {
+    let seekPosition = 0;
+
+    if (!isNaN(curr_track.duration)) {
+      seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+
+      seek_slider.value = seekPosition;
+
+      let currentMinutes = Math.floor(curr_track.currentTime / 60);
+      let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+      let durationMinutes = Math.floor(curr_track.duration / 60);
+      let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+
+      if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+      if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+      if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
+      if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
+
+      curr_time.textContent = currentMinutes + ":" + currentSeconds;
+      total_duration.textContent = durationMinutes + ":" + durationSeconds;
+    }
+  }
+  </script>
+  <script>
+    // Handle submission for the second form (Sign-in)
+    const scriptURLForm2 = 'https://script.google.com/macros/s/AKfycbyMK26p3CYp-qhjBpdTM1mW4i2G7qsqC9C9Fve02Y4eLOYX30DUiP8HmSpw7e0iPn50/exec';
+    const form2 = document.forms['Sign-in-sheet'];
+    const msg1 = document.getElementById("msg1");
+
+    form2.addEventListener('submit', e => {
+    e.preventDefault(); // Prevent default form submission
+
+    fetch(scriptURLForm2, { method: 'POST', body: new FormData(form2) })
+        .then(response => {
+            if (response.ok) {
+                msg1.innerHTML = "Form 2 (Sign-in) submitted successfully!";
+                form2.reset(); // Reset the form fields
+            } else {
+                msg1.innerHTML = "Error submitting Form 2. Please try again.";
+            }
+            setTimeout(() => {
+                msg1.innerHTML = ""; // Clear message after 2 seconds
+            }, 2000);
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+            msg1.innerHTML = "Error submitting Form 2. Please try again.";
+            setTimeout(() => {
+                msg1.innerHTML = ""; // Clear message after 2 seconds
+            }, 2000);
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+eel
+sqlite3
+wolframalpha
+beautifulsoup4
+requests
+goose3
+googlesearch-python
+yt-dlp
+python-vlc
+pyttsx3
+Flask
