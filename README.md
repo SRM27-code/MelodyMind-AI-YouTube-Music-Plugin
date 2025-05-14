@@ -120,7 +120,7 @@
 
 ## 📸 Screenshots
 
-![Login UI](docs/screenshots/login.png)
+![Login UI]([docs/screenshots/login.png](https://github.com/SRM27-code/MelodyMind-AI-YouTube-Music-Plugin/blob/main/Screenshots/Screenshot%202025-02-02%20220441.png)
 ![Voice Assistant GIF](docs/screenshots/voice.gif)
 ![Music Control Interface](docs/screenshots/player.png)
 
