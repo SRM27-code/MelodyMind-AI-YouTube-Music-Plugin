@@ -120,9 +120,9 @@
 
 ## 📸 Screenshots
 
-![Login UI]([docs/screenshots/login.png](https://github.com/SRM27-code/MelodyMind-AI-YouTube-Music-Plugin/blob/main/Screenshots/Screenshot%202025-02-02%20220441.png?raw=true))
-![Voice Assistant GIF]([docs/screenshots/voice.gif](https://github.com/SRM27-code/MelodyMind-AI-YouTube-Music-Plugin/blob/main/Screenshots/Animation%20-%201747198930367.gif?raw=true))
-![Music Control Interface]([docs/screenshots/player.png](https://github.com/SRM27-code/MelodyMind-AI-YouTube-Music-Plugin/blob/main/Screenshots/Screenshot%202025-05-14%20102451.png?raw=true))
+![Login UI]((https://github.com/SRM27-code/MelodyMind-AI-YouTube-Music-Plugin/blob/main/Screenshots/Screenshot%202025-02-02%20220441.png?raw=true))
+![Voice Assistant GIF]((https://github.com/SRM27-code/MelodyMind-AI-YouTube-Music-Plugin/blob/main/Screenshots/Animation%20-%201747198930367.gif?raw=true))
+![Music Control Interface]((https://github.com/SRM27-code/MelodyMind-AI-YouTube-Music-Plugin/blob/main/Screenshots/Screenshot%202025-05-14%20102451.png?raw=true))
 
 ---
 
